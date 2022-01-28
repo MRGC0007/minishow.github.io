@@ -1,0 +1,48 @@
+header{
+    flex-direction: column;
+}
+header ul li a{
+    font-size: .5rem;
+    /* padding: 10px 7px; */
+    /* padding-bottom: 8px; */
+    /* position: absolute; */
+    /* top: 0%; */
+    /* padding: 5px; */
+    /* margin-top: 50px; */
+    padding: 5px;
+    
+}
+header ul li{
+    padding: 0%;
+
+}
+header nav{
+    position: absolute;
+    top: 0%;
+    margin-left: 20px;
+}
+header .head h1{
+    position: absolute;
+    top: 0%;
+    font-size: 1.2rem;
+    margin-left: 130px;
+    margin-top: 0%;
+}
+header .head img{
+    height: 40px;
+}
+header .icon{
+    position: absolute;
+    top: 0%;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 350px;
+
+}
+header .icon #isearch {
+    font-size: 12px;
+    
+}
+header .icon #isignin{
+    font-size: 15px;
+}
