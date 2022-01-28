@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <style>
+        .bag1 {
+            height: 300px;
+            width: 250px;
+            /* background-color: red; */
+            margin-top: 20px;
+        }
+
+        .bags {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-left: 55px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            margin-left: 440px;
+            border-bottom: 1px solid red;
+            display: inline;
+            cursor: pointer;
+
+
+
+        }
+
+        .bag img {
+            height: 280px;
+            width: 250px;
+        }
+
+        .bag1 h3 {
+            text-align: center;
+            margin-bottom: 10px;
+            /* margin-top: 10px; */
+        }
+
+        .bag {
+            margin-bottom: 60px;
+        }
+        .bag1{
+            position: relative;
+            text-align: center;
+            /* color: rgb(255, 255, 255); */
+            /* background-color: black; */
+        }
+       .bag1:hover  .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        opacity: 1;
+        font-weight: 700;
+        cursor: pointer;
+        }
+        .bag1:hover img{
+            opacity: .7 ;
+        }
+        .bag1 .center{
+            /* background-color: black; */
+            color: rgb(0, 0, 0);
+        }
+        .bag1 .center{
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BAGS AND ACCESSORIES</h1>
+    <div class="bag" id="bag">
+
+
+        <div class="bags">
+            <div class="bag1" id="bg"> 
+                <img src="bag img/61vdgWSYp4L._AC_UY395_.jpg" alt="">
+                <h3>Blue Bag</h3>
+                <div class="center">+ADD CART</div>
+            </div>
+            <div class="bag1"><img src="bag img/2.jfif" alt="">
+                <h3>Pink Bag</h3>
+                <div class="center">+ADD CART</div>
+            </div>
+            <div class="bag1"> <img src="bag img/3.jpg" alt="">
+                <h3>Dark-Grey </h3>
+            </div>
+            <div class="bag1"><img src="bag img/77.jfif" alt="">
+                <h3>Treditional</h3>
+            </div>
+            <div class="bag1"><img src="bag img/777.jpg" alt="">
+                <h3>Red Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/R.jfif" alt="">
+                <h3>Blue Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/R.png" alt="">
+                <h3>Fastion Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/s-l225.jpg" alt="">
+                <h3>Coffee Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/99.jpg" alt="">
+                <h3>Small Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/6.jpg" alt="">
+                <h3>Simple Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/7.png" alt="">
+                <h3>Simple-Red</h3>
+            </div>
+            <div class="bag1"><img src="bag img/8.jpg" alt="">
+                <h3>Apple Bag</h3>
+            </div>
+        </div>
+
+    </div>
+    <h1>MOBILE AND ACCESSORIES</h1>
+    <div class="mobile" id="bag">
+
+
+        <div class="bags">
+            <div class="bag1" id="bg"> <img src="bag img/61vdgWSYp4L._AC_UY395_.jpg" alt="">
+                <h3>Blue Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/2.jfif" alt="">
+                <h3>Pink Bag</h3>
+            </div>
+            <div class="bag1"> <img src="bag img/3.jpg" alt="">
+                <h3>Dark-Grey </h3>
+            </div>
+            <div class="bag1"><img src="bag img/77.jfif" alt="">
+                <h3>Treditional</h3>
+            </div>
+            <div class="bag1"><img src="bag img/777.jpg" alt="">
+                <h3>Red Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/R.jfif" alt="">
+                <h3>Blue Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/R.png" alt="">
+                <h3>Fastion Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/s-l225.jpg" alt="">
+                <h3>Coffee Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/99.jpg" alt="">
+                <h3>Small Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/6.jpg" alt="">
+                <h3>Simple Bag</h3>
+            </div>
+            <div class="bag1"><img src="bag img/7.png" alt="">
+                <h3>Simple-Red</h3>
+            </div>
+            <div class="bag1"><img src="bag img/8.jpg" alt="">
+                <h3>Apple Bag</h3>
+            </div>
+        </div>
+
+    </div>
+</body>
+<!-- <script>
+    $("h1").click(function(){
+        $(".bag").slideToggle(1000)
+    });
+
+    $(".bag1").hover(function(){
+        // alert("ss");
+
+var a = document.getElementById("bg");
+    a.innerHTML = "<div></br></br></br></br></br></br></br>--CR7--</br> Critiano Ronaldo</div>"
+    document.getElementById("bg").style.color = "black";
+    document.getElementById("bg").style.backgroundImage = "url('bag img/61vdgWSYp4L._AC_UY395_.jpg')";
+    document.getElementById("bg").style.backgroundSize = "300px 250px 250px 300px";
+    document.getElementById("bg").style.textAlign = "center";
+    document.getElementById("bg").style.textAlignLast = "center";
+    // document.getElementById("bg").style.textShadow = "1.5px 1.5px 1px black, 1.5px 1.5px 1px black";
+ 
+    // document.getElementById("bg").style.opacity = "0.7"; 
+    // document.getElementById("bg").style.border = "thick solid yellow"; 
+    // document.getElementById("bg").style.borderRadius = "25px"; 
+    // document.getElementById("bg").style.boxShadow = "10px 20px 30px black";
+    document.getElementById("bg").style.fontFamily = "Impact,Charcoal,sans-serif";
+});
+$(".bag1").mouseout(function(){
+
+document.getElementById("bg").style.backgroundSize = "150px 200px 150px 200px";
+// document.getElementById("bg").style.backgroundImage = "url('download.png')";
+var b = document.getElementById("bg");
+    b.innerHTML = "<div>.</div>"
+    document.getElementById("bg").style.color = "black";
+    // document.getElementById("bg").style.textShadow = "1px 1px 0.5px black, 1px 1px 0.5px black";
+    document.getElementById("bg").style.border = "0px solid yellow"; 
+    document.getElementById("bg").style.borderRadius = "0px";
+    document.getElementById("bg").style.opacity = "1"; 
+    document.getElementById("bg").style.boxShadow = "0px 0px 0px black";
+    
+
+
+});
+</script> -->
+
+</html>

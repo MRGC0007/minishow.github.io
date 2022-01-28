@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" ct="IE=edge">
+    <meta name="viewport" ct="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(225deg, #53001c, #01364e);
+    background-size: cover;
+}
+.contact .ct{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .ct h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .ct p
+{
+    font-weight: 300;
+    color: #fff;
+}
+.cr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.cr .ci{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.cr .ci .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.cr .ci .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+
+}
+.cf
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.cf h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.cf .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cf .inputbox input,
+.cf .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.cf .inputbox span{
+    position:absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5%;
+    color: #666;
+
+}
+.cf .inputbox input:focus ~ span,
+.cf .inputbox input:valid ~ span,
+    .cf .inputbox textarea:focus ~ span,
+    .cf .inputbox textarea:valid ~ span
+
+    {
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+    }
+.cf .inputbox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="contact">
+    <div class="ct">
+
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, facilis dolore atque dignissimos
+            necessitatibus minus illo molestias adipisci expedita placeat?Lorem, ipsum dolor .lorem2.</p>
+    </div>
+
+    <div class="cr">
+
+        <div class="ci">
+
+            <div class="box">
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>4671 Sugar Camp Road, <br> Owatonna,Minnesota, <br>55060</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>info.onlinemart@gmail.com</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>+91-709-617-3068</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cf">
+            <form>
+
+                <h2>Send Message</h2>
+                <div class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputbox">
+                    <input type="email" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputbox">
+                    <textarea required="required"></textarea>
+
+                    <span>Type your Message...</span>
+                </div>
+                <div class="inputbox">
+                    <input type="submit" name="" value="Send">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>
