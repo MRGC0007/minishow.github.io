@@ -999,3 +999,9 @@ header .icon #isearch {
 header .icon #isignin{
     font-size: 34px;
 }
+
+
+marquee{
+    color: red;
+    opacity: 0;
+}
